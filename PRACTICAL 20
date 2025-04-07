@@ -1,0 +1,42 @@
+abstract class Shape {
+    abstract void area(); 
+}
+
+class Triangle extends Shape {
+    int base = 5, height = 10;
+
+    void area() {
+        System.out.println("Triangle Area: " + (0.5 * base * height));
+    }
+}
+
+
+class Rectangle extends Shape {
+    int length = 4, width = 6;
+
+    void area() {
+        System.out.println("Rectangle Area: " + (length * width));
+    }
+}
+
+
+class Circle extends Shape {
+    int radius = 7;
+
+    void area() {
+        System.out.println("Circle Area: " + (3.14 * radius * radius));
+    }
+}
+
+
+public class ShapeDemo {
+    public static void main(String[] args) {
+        Shape t = new Triangle();
+        Shape r = new Rectangle();
+        Shape c = new Circle();
+
+        t.area();
+        r.area();
+        c.area();
+    }
+}

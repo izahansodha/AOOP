@@ -1,0 +1,17 @@
+public class Sample {
+    public static void main(String[] args) {
+        int i = 10;
+        
+        if (i == 0) {
+            System.out.println("i is zero");
+        } else if (i > 0) {
+            System.out.println("i is positive");
+        } else {
+            System.out.println("i is negative");
+        }
+
+        for (int j = 1; j <= 5; j++) {
+            System.out.println("Value of j: " + j);
+        }
+    }
+}

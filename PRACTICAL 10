@@ -1,0 +1,14 @@
+final class FinalExample {  
+    final int MAX = 100;  
+
+    final void show() {  
+        System.out.println("Final method. MAX = " + MAX);  
+    }  
+}  
+
+public class FinalDemo {  
+    public static void main(String[] args) {  
+        FinalExample obj = new FinalExample();  
+        obj.show();  
+    }  
+}

@@ -1,0 +1,13 @@
+import java.util.*;
+
+public class ListDemo {
+    public static void main(String[] args) {
+        
+        List<String> weekdays = new ArrayList<>(Arrays.asList("Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"));
+        System.out.println("Weekdays: " + weekdays);
+
+    
+        List<String> months = new LinkedList<>(Arrays.asList("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"));
+        System.out.println("Months: " + months);
+    }
+}

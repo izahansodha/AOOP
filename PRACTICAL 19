@@ -1,0 +1,24 @@
+interface Speak {
+    void speak();
+}
+
+
+interface Walk {
+    void walk();
+}
+
+class Human implements Speak, Walk {
+    public void speak() {
+        System.out.println("I can speak!");
+    }
+
+    public void walk() {
+        System.out.println("I can walk!");
+    }
+
+    public static void main(String[] args) {
+        Human person = new Human();
+        person.speak();
+        person.walk();
+    }
+}

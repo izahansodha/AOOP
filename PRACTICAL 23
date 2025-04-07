@@ -1,0 +1,26 @@
+class DivideByZeroException extends Exception {
+    public DivideByZeroException(String message) {
+        super(message); 
+    }
+}
+
+
+public class CustomExceptionDemo {
+    
+    static void divide(int a, int b) throws DivideByZeroException {
+        if (b == 0) {
+            throw new DivideByZeroException("Error: Division by zero is not allowed!");
+        } else {
+            System.out.println("Result: " + (a / b));
+        }
+    }
+
+    public static void main(String[] args) {
+        try {
+            divide(10, 2); 
+            divide(5, 0);  
+        } catch (DivideByZeroException e) {
+            System.out.println(e.getMessage()); 
+        }
+    }
+}

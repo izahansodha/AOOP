@@ -1,0 +1,27 @@
+public class StringMethodsDemo {
+    public static void main(String[] args) {
+        String str = "Hello World";
+
+      
+        char ch1 = str.charAt(6);
+        System.out.println("Character at index 6: " + ch1);
+
+      
+        boolean ch2 = str.contains("Hello");
+        System.out.println("Contains 'Hello': " + ch2);
+
+        String ch3 = String.format(str.replace("Hello", "Hi"));
+        System.out.println("Formatted String: " + ch3);
+
+    
+        int ch4 = str.length();
+        System.out.println("String Length: " + ch4);
+
+        
+        String[] ch5 = str.split(" ");
+        System.out.println("Splitting String:");
+        for (String word : ch5) {
+            System.out.println(word);
+        }
+    }
+}

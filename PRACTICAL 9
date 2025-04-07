@@ -1,0 +1,13 @@
+class Demo {  
+    static int num = 10; 
+
+    static void show() { 
+        System.out.println("Number: " + num);  
+    }  
+}  
+
+public class StaticExample {  
+    public static void main(String[] args) {  
+        Demo.show();   
+    }  
+}

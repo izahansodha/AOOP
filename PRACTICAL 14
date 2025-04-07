@@ -1,0 +1,25 @@
+class Animal {
+    public void eating() {
+        System.out.println("Running...");
+    }
+}
+
+
+class Cat extends Animal {
+    public void animalName() {
+        System.out.println("Dog...");
+    }
+}
+
+
+public class Main {
+    public static void main(String[] args) {
+        
+        Dog d1 = new Dog();
+        
+        
+        d1.running();
+        
+        d1.animalName();
+    }
+}
